@@ -3,9 +3,9 @@
 from uuid import uuid4
 from fastapi import APIRouter, Depends
 
-from api.schemas.event import CreateEventRequest, EventResponse
-from services.event_service import EventService
-from api.deps import get_event_service
+from events.api.schemas.event import CreateEventRequest, EventResponse
+from events.services.event_service import EventService
+from events.api.deps import get_event_service
 
 router = APIRouter(prefix="/events")
 

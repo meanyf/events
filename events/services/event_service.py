@@ -1,7 +1,7 @@
 # event_service.py
 from uuid import uuid4
-from domain.event import Event
-from .interfaces.event_repository import EventRepository
+from events.domain.event import Event
+from events.services.interfaces.event_repository import EventRepository
 
 class EventService:
     def __init__(self, repo: EventRepository):

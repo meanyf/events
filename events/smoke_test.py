@@ -3,9 +3,9 @@
 from uuid import uuid4
 from datetime import datetime, timezone
 
-from domain.event import Event
-from services.event_service import EventService
-from services.interfaces.event_repository import EventRepository
+from events.domain.event import Event
+from events.services.event_service import EventService
+from events.services.interfaces.event_repository import EventRepository
 
 
 class InMemoryEventRepo(EventRepository):

@@ -3,9 +3,9 @@
 from uuid import UUID
 from sqlalchemy.orm import Session
 
-from domain.event import Event, EventStatus
-from services.interfaces.event_repository import EventRepository
-from db.models import EventORM
+from events.domain.event import Event, EventStatus
+from events.services.interfaces.event_repository import EventRepository
+from events.db.models import EventORM
 
 
 class SqlEventRepo(EventRepository):
